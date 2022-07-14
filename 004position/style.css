@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #f7f7f7;
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
+
+p{
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+nav{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a{
+  background-color: white;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+
+}
+
+.introducao {
+  background-color: white;
+  padding: 40px;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+}
+
+.detalhe{
+  background-color: #ee2211;
+  width: 60px;
+  height: 4px;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.introducao a{
+  background-color: #ee2211;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+ }
+
+
+.subtitulo{
+  color: #c6c6c6;
+  font-size: 64px;
+  padding: 40px;
+  text-align: right;
+  display: grid;
+  align-self: center;
+  
+}
+
+.vantagens {
+  background-color: white;
+  padding: 40px;
+  text-align: left;
+}
+
+.vantagensItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.vantagensItem p{
+  grid-column: 2;
+}
+
+footer{
+  background-color: white;
+  text-align: center;
+  padding: 40px;
+  width: 100%;
+}
