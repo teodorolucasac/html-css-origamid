@@ -15,32 +15,63 @@ body{
   gap: 60px;
 }
 
+
 p{
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.3;
 }
 
-nav{
+h1{
+  font-size: 2rem;
+}
+
+header{
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+  
+}
+
+.menu{
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  list-style: none;
 }
 
-nav a{
+.menu a{
   background-color: white;
   color: black;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
   text-decoration: none;
+  display: inline-block;
+  border: 2px solid transparent;
 }
 
-section{
+.menu a:hover{
+  border: 2px solid #e21;
+}
+
+
+.conteudo{
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
+  position: relative;
+}
 
+.introducao::before {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #ee2211;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  right: -30px;
 }
 
 .introducao {
@@ -54,51 +85,51 @@ section{
   justify-items: end;
 }
 
-.detalhe{
-  background-color: #ee2211;
-  width: 60px;
-  height: 4px;
-  position: absolute;
-  top: 30px;
-  right: -30px;
-}
-
 .introducao a{
   background-color: #ee2211;
   color: white;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-img {
-  max-width: 100%;
-  display: block;
- }
-
-
-.subtitulo{
-  color: #c6c6c6;
-  font-size: 64px;
-  padding: 40px;
-  text-align: right;
-  display: grid;
-  align-self: center;
-  
+.introducao a:hover{
+  background-color: #900;
 }
+
+.fotoBicicleta {
+  max-width: 100%;
+ }
 
 .vantagens {
   background-color: white;
   padding: 40px;
-  text-align: left;
+}
+
+.subtitulo{
+  color: #c6c6c6;
+  font-size: 4rem;
+  padding: 2.5rem;
+  text-align: right;
+  margin: auto;
+  background-image: url(img/onda.svg);
 }
 
 .vantagensItem {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
-  padding: 20px;
+  padding: 1.25rem;
+  border-left: 4px solid transparent;
+}
+
+.vantagensItem:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
+.vantagensItem:hover{
+  border-left: 4px solid #e21;
 }
 
 .vantagensItem p{
