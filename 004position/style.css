@@ -29,15 +29,19 @@ header{
   display: grid;
   justify-items: center;
   gap: 60px;
-  
+  width: 100%;
 }
 
-.menu{
+.menu, .divDrop{
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
+}
+
+.sanduiche, .sanduiche a{
+  display: none;
 }
 
 .menu a{
@@ -98,9 +102,12 @@ header{
   background-color: #900;
 }
 
-.fotoBicicleta {
+.divBicicleta img{
   max-width: 100%;
- }
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 .vantagens {
   background-color: white;
@@ -117,6 +124,7 @@ header{
 }
 
 .vantagensItem {
+  text-align: left;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
@@ -141,4 +149,125 @@ footer{
   text-align: center;
   padding: 40px;
   width: 100%;
+}
+
+@media (max-width: 961px){
+  .subtitulo{
+    /* word-break: break-all; */
+    /* font-size: 3rem; */
+    display: flex;
+    place-items: center center;
+    text-align: center;
+  }
+  .conteudoVantagens{
+      grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 761px){
+  .conteudo{
+    grid-template-columns: 1fr;
+  }
+  .introducao{
+    text-align: center;
+    gap: 20px;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .introducao::before {
+    content: '';
+    width: 4px;
+    height: 60px;
+    background: #ee2211;
+    position: absolute;
+    z-index: 1;
+    top: calc(100% - 30px);
+    right: 30px;
+  }
+
+  .divBicicleta img{
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .subtitulo{
+    display: flex;
+    place-items: center center;
+    text-align: center;
+  }
+
+  .divDrop{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }  
+
+  .drop a{
+    width: 100%;
+  }
+
+  header, body{
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 600px){
+  .divDrop{
+    display: none;
+    position: absolute;
+  }
+
+  nav{
+    place-self: start start;
+
+  }
+
+  .menu{
+    display: inline-block;
+    float: left;
+
+  }
+
+  .sanduiche{
+    display: inline-block;
+  }
+
+  .sanduiche a{
+    width: 165px;
+    text-align: center;
+    border-right: 2px solid #e21;
+    border-bottom: 2px solid #e21;
+    border-top: 2px solid #e21;
+  }
+
+  .sanduiche a:hover{
+    border-left: 2px solid transparent;
+    border-right: 2px solid #e21;
+    border-bottom: 2px solid #e21;
+    border-top: 2px solid #e21;
+  }
+
+ .menu:hover .divDrop{
+    display: block;
+    z-index: 1;
+  }
+
+  .divDrop{
+    border-left: 2px solid transparent;
+    border-right: 2px solid #e21;
+    border-bottom: 2px solid #e21;
+    border-top: 2px solid transparent;
+  }
+  .drop:hover li.sanduiche{
+    border: none;
+  }
+}
+
+@media (max-width: 500px){
+  .subtitulo{
+    font-size: 2rem;
+  }
+  
 }
