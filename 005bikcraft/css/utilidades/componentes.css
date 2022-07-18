@@ -1,0 +1,24 @@
+.botao{
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--cor-degrade-botao1);
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+  color: var(--cor-p5);
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-family: var(--fonte-padrao1);
+  font-weight: 600;
+}
+
+.botao:hover{
+  background: var(--cor-degrade-botao2);
+}
+
+@media (max-width: 600px){
+  .botao{
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+}
