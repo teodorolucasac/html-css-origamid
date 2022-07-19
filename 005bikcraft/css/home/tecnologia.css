@@ -17,8 +17,8 @@
 }
 
 .tecnologia-conteudo{
-  padding-top: 160;
-  padding-bottom: 160;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 .tecnologia-conteudo > span {
@@ -76,5 +76,5 @@
   .tecnologia-vantagens{
     flex-direction: column;
   }
-}
+} 
 

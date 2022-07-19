@@ -6,7 +6,6 @@
   list-style: none;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  color: #111111;
 }
 
 body{
@@ -27,12 +26,7 @@ a{
   text-decoration: none;
 }
 
-/* font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
 :root{
-  --fonte-padrao1: 'Poppins', sans-serif;
-  --fonte-padrao2: 'Roboto', sans-serif;;
-
   --cor-degrade-botao1: linear-gradient(#ffbf00, #f2a50c);
   --cor-degrade-botao2: linear-gradient(#ffb60d, #e59317);
 }
