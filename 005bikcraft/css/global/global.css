@@ -18,6 +18,10 @@ img{
   display: block;
 }
 
+img[src$=".jpg"]{
+  border-radius: 4px;
+}
+
 a{
   color: inherit;
   text-decoration: none;
@@ -29,14 +33,6 @@ font-family: 'Roboto', sans-serif; */
   --fonte-padrao1: 'Poppins', sans-serif;
   --fonte-padrao2: 'Roboto', sans-serif;;
 
-  --cor-bg1: #000000;
-  --cor-bg2: #111111;
-  --cor-bg3: #2e2e2e;
-  --cor-bg4: #ffffff;
-  --cor-texto1: #ffffff;
-  --cor-texto2: #b2b2b2;
-  --cor-texto3: #332200;
-  --cor-detalhe1: #ffbb00;
   --cor-degrade-botao1: linear-gradient(#ffbf00, #f2a50c);
   --cor-degrade-botao2: linear-gradient(#ffb60d, #e59317);
 }

@@ -8,9 +8,8 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .header-menu{
@@ -22,10 +21,7 @@
 .header-menu a{
   display: inline-block;
   padding: 1rem 0rem;
-  font-size: 1.125rem;
   position: relative;
-  font-family: var(--fonte-padrao1);
-  font-weight: 400;
 }
 
 .header-menu a:after{

@@ -18,6 +18,8 @@
   --cor-p3: #a66f00;
   --cor-p4: #664400;
   --cor-p5: #332200;
+  --cor-degrade-botao1: linear-gradient(#ffbf00, #f2a50c);
+  --cor-degrade-botao2: linear-gradient(#ffb60d, #e59317);
 }
 
 .cor-0{
@@ -74,4 +76,11 @@
 }
 .cor-p5{
   color: var(--cor-p5);
+}
+
+.cor-degrade-botao1{
+  color: linear-gradient(#ffbf00, #f2a50c);
+}
+.cor-degrade-botao2{
+  color: linear-gradient(#ffb60d, #e59317);
 }
